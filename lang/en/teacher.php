@@ -1,0 +1,20 @@
+<?php
+return [
+    'title' => 'Teachers',
+    'List_Teachers' => 'List Teachers',
+    'create' => 'teacher create',
+    'name' => 'Name',
+    'name_en' => 'Name EN',
+    'email' => 'email',
+    'password' => 'password',
+    'specialization' => 'specialization',
+    'gender' => 'gender',
+    'Joining_Date' => 'Joining Date',
+    'Address' => 'Address',
+    'actions' => 'actions',
+    'Delete' => 'Delete',
+    'Choose' => 'choose',
+    'Next' => 'Next',
+    'edit' => 'Edit Teacher',
+    'Close' => 'Close',
+];

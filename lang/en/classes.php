@@ -1,0 +1,21 @@
+<?php 
+return [
+    'Classes' => 'Classes',
+     'Title'  => 'List Classes',
+     'Add_Class' => 'Add Class',
+     'Edit_Class' =>'Edit Class',
+     'Delete_Class' => 'Delete Class',
+     'Save_changes' => 'Save changes',
+     'Delete' => 'Delete',
+     'Close' => 'Close',
+     'Name' => 'Name',
+     'Name_en' => 'Name_en',
+     'Grade' => 'Grade',
+     'Actions' => 'Actions',
+     'exists' => 'the Name already exists',
+     'Add_recorde' => 'Add Recorde',
+     'Processes' => 'Processes',
+     'delete_row' => 'delete row',
+     'delete_checkbox' => 'delete checkbox',
+     'search_by_Grade' => 'search by Grade',
+];
