@@ -23,7 +23,7 @@ class PromotionController extends Controller
      */
     public function create()
     {
-        //
+        return $this->promotion->create();
     }
 
     /**
@@ -61,8 +61,8 @@ class PromotionController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(promotion $promotion)
+    public function destroy(Request $request)
     {
-        //
+        return $this->promotion->destroy($request);
     }
 }

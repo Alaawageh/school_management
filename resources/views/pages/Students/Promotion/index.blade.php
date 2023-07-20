@@ -27,7 +27,7 @@
                             <form method="post" action="{{route('Promotions.store')}}">
                             @csrf
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="form-group">
                                             <label for="grade_id">{{trans('student.Grade_old')}} : <span class="text-danger">*</span></label>
                                             <select class="custom-select mr-sm-2" name="grade_id">
@@ -38,7 +38,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="form-group">
                                             <label for="class_id">{{trans('student.classrooms_old')}} : <span class="text-danger">*</span></label>
                                             <select class="custom-select mr-sm-2" name="class_id">
@@ -47,7 +47,7 @@
                                         </div>
                                     </div>
         
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="form-group">
                                             <label for="section_id">{{trans('student.section_old')}} : </label>
                                             <select class="custom-select mr-sm-2" name="section_id">
@@ -55,9 +55,23 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="academic_year">{{trans('student.academic_year')}} : <span class="text-danger">*</span></label>
+                                            <select class="custom-select mr-sm-2" name="academic_year">
+                                                <option selected disabled>{{trans('student.Choose')}}...</option>
+                                                @php
+                                                    $current_year = date("Y");
+                                                @endphp
+                                                @for($year=$current_year; $year<=$current_year +1 ;$year++)
+                                                    <option value="{{ $year}}">{{ $year }}</option>
+                                                @endfor
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="form-group">
                                             <label for="grade_id">{{trans('student.Grade_new')}} : <span class="text-danger">*</span></label>
                                             <select class="custom-select mr-sm-2" name="grade_id_new">
@@ -68,7 +82,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="form-group">
                                             <label for="class_id">{{trans('student.classrooms_new')}} : <span class="text-danger">*</span></label>
                                             <select class="custom-select mr-sm-2" name="class_id_new">
@@ -77,11 +91,25 @@
                                         </div>
                                     </div>
         
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="form-group">
                                             <label for="section_id">{{trans('student.section_new')}} : </label>
                                             <select class="custom-select mr-sm-2" name="section_id_new">
         
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="academic_year">{{trans('student.academic_year_new')}} : <span class="text-danger">*</span></label>
+                                            <select class="custom-select mr-sm-2" name="academic_year_new">
+                                                <option selected disabled>{{trans('student.Choose')}}...</option>
+                                                @php
+                                                    $current_year = date("Y");
+                                                @endphp
+                                                @for($year=$current_year; $year<=$current_year +1 ;$year++)
+                                                    <option value="{{ $year}}">{{ $year }}</option>
+                                                @endfor
                                             </select>
                                         </div>
                                     </div>

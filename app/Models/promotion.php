@@ -9,4 +9,26 @@ class promotion extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+    public function student(){
+        return $this->belongsTo(Student::class,'student_id');
+    }
+    public function f_grade(){
+        return $this->belongsTo(Gender::class,'from_grade');
+    }
+    public function f_classroom(){
+        return $this->belongsTo(Classroom::class,'from_class');
+    }
+    public function f_section(){
+        return $this->belongsTo(Section::class,'from_section');
+    }
+    public function t_grade(){
+        return $this->belongsTo(Gender::class,'to_grade');
+    }
+    public function t_classroom(){
+        return $this->belongsTo(Classroom::class,'to_class');
+    }
+    public function t_section(){
+        return $this->belongsTo(Section::class,'to_section');
+    }
 }

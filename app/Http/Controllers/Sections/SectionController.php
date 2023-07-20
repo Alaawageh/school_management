@@ -83,7 +83,7 @@ class SectionController extends Controller
             ]);
             //update pivot table 
             if(isset($request->teacher_id)){
-                $sections->Teacher()->sync($request->teteacher_id);
+                $sections->Teacher()->sync($request->teacher_id);
             }else{
                 $sections->Teacher()->sync(array());
             }

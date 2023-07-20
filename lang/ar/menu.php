@@ -15,4 +15,8 @@ return [
    'Add_Student' => 'اضافة طالب جديد',
    'List_Student' => 'قائمة الطلاب',
    'Promotions_Student' => 'ترقية الطلاب',
+   'Promotions_management' => 'ادراة ترقية الطلاب',
+   'add_Promotion' => 'اضافة ترقية',
+   'list_Promotions' => 'قائمة الترقيات',
+   'student_info' => 'معلومات الطلاب',
 ];

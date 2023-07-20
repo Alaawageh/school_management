@@ -34,5 +34,8 @@ return [
     'created_at' => 'created at',
     'Processes' => 'Processes',
     'Download' => 'Download',
-    'Delete_attachment' => 'Delete Attachment'
+    'Delete_attachment' => 'Delete Attachment',
+    'academic_year_new' => 'Academic year New',
+    'rollback' => 'Rollback',
+    'rollback_one' => 'One Rollback',
 ];

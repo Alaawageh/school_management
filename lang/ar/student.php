@@ -34,5 +34,8 @@ return [
     'created_at' => 'تاريخ الاصافة',
     'Processes' => 'العمليات',
     'Download' => 'تنزيل',
-    'Delete_attachment' => 'حذف المرفق'
+    'Delete_attachment' => 'حذف المرفق',
+    'academic_year_new' => 'السنة الدراسية الجديدة',
+    'rollback' => 'تراجع الكل',
+    'rollback_one' => 'ارجاع طالب'
 ];

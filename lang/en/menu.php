@@ -14,5 +14,9 @@ return [
    'Student' => 'Student',
    'Add_Student' => 'Add Student',
    'List_Student' => 'List Student',
-   'Promotions_Student' => 'Promotions Student'
+   'Promotions_Student' => 'Promotions Student',
+   'Promotions_management' => 'Promotions Management',
+   'add_Promotion' => 'Add Promotion',
+   'list_Promotions' => 'List Promotions',
+   'student_info' => 'Student Information',
 ]; 

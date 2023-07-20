@@ -20,6 +20,8 @@ return new class extends Migration
             $table->foreignId('to_grade')->references('id')->on('Grades')->onDelete('cascade')->onUpdate('cascade');
             $table->foreignId('to_class')->references('id')->on('Classrooms')->onDelete('cascade')->onUpdate('cascade');
             $table->foreignId('to_section')->references('id')->on('sections')->onDelete('cascade')->onUpdate('cascade');
+            $table->string('academic_year');
+            $table->string('academic_year_new');
             $table->timestamps();
         });
     }
